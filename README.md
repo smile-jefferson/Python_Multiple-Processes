@@ -30,7 +30,7 @@
 ## Project👋 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" alt="Laptop" width="25" height="25" />
 
 <!-- 專案開始日期 -->
-<img alt="Static Badge" src="https://img.shields.io/badge/Start_Date-2024_%2F_09_%2F_04-FFD43B?style=plastic&logo=Python&logoColor=%2361dbfb&label=Start%20Date&color=blue">
+<img alt="Static Badge" src="https://img.shields.io/badge/Start_Date-2024_%2F_09_%2F_04-FFD43B?style=plastic&logo=Python&logoColor=%23FFD43B&label=Start%20Date&color=blue">
 
 <!-- 專案使用技術 Badge 版本A。 來源:https://shields.io/-->
 ![Python](https://img.shields.io/badge/Python-%2320232a.svg?style=plastic&logo=Python&logoColor=%23FFD43B)
