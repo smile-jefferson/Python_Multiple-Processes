@@ -222,7 +222,6 @@ if __name__ == '__main__':
     [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats)](https://github.com/anuraghazra/github-readme-stats)
 -->
 ## Side Project 👨‍💻
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Wrench.png" alt="Wrench" width="25" height="25" />
 <a href="https://github.com/smile-jefferson/Python_Multiple-Processes">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin?username=smile-jefferson&repo=Python_Multiple-Processes&title_color=f0f0f0&icon_color=9f9f9f&text_color=f9f9f9&bg_color=515151">
