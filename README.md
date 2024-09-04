@@ -33,7 +33,7 @@
 <img alt="Static Badge" src="https://img.shields.io/badge/Start_Date-2024_%2F_09_%2F_04-FFD43B?style=plastic&logo=Python&logoColor=%23FFD43B&label=Start%20Date&color=blue">
 
 <!-- 專案使用技術 Badge 版本A。 來源:https://shields.io/-->
-![Python](https://img.shields.io/badge/Python-#306998.svg?style=plastic&logo=Python&logoColor=%23FFD43B)
+![Python](https://img.shields.io/badge/Python-%23306998.svg?style=plastic&logo=Python&logoColor=%23FFD43B)
 
 ---
 
