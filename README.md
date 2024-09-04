@@ -30,7 +30,7 @@
 ## Project👋 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" alt="Laptop" width="25" height="25" />
 
 <!-- 專案開始日期 -->
-<img alt="Static Badge" src="https://img.shields.io/badge/Start_Date-2024_%2F_09_%2F_04-blue?style=plastic&logo=Python&logoColor=%2361dbfb&label=Start%20Date&color=blue">
+<img alt="Static Badge" src="https://img.shields.io/badge/Start_Date-2024_%2F_09_%2F_04-FFD43B?style=plastic&logo=Python&logoColor=%2361dbfb&label=Start%20Date&color=blue">
 
 <!-- 專案使用技術 Badge 版本A。 來源:https://shields.io/-->
 ![Python](https://img.shields.io/badge/Python-%2320232a.svg?style=plastic&logo=Python&logoColor=%23FFD43B)
@@ -44,7 +44,7 @@
 ## Side Project <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Wrench.png" alt="Wrench" width="25" height="25" />
 <a href="https://github.com/smile-jefferson/Python_Multiple-Processes">
     <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin?username=smile-jefferson\&repo=Python_Multiple-Processes&title_color=f0f0f0&icon_color=9f9f9f&text_color=f9f9f9&bg_color=515151">
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin?username=smile-jefferson&repo=Python_Multiple-Processes&title_color=f0f0f0&icon_color=9f9f9f&text_color=f9f9f9&bg_color=515151">
         <img alt="Shows smile-jefferson's GitHub Stats." src="https://github-readme-stats.vercel.app/api/pin?username=smile-jefferson&theme=default">
     </picture>
 </a>
