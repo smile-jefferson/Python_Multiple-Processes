@@ -1,7 +1,7 @@
 <!-- Name & Banner -->
 <p align="center">
-    <img src="https://socialify.git.ci/iampavangandhi/iampavangandhi/image?description=0&font=Source%20Code%20Pro&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Auto" alt="iampavangandhi" width="640" height="320" />
-    <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=24&duration=2000&pause=2000&center=true&vCenter=true&width=450&height=60&lines=HI+there!+I'm+Jefferson!;I'm+a+full-stack+enginer;Hope+you+guys+like+my+page;Sphinx+of+black+quartz%2C+judge+my+vow" alt="Typing SVG" /></a>
+    <img src="https://socialify.git.ci/smile-jefferson/Python_Multiple-Processes/image?description=0&font=Source%20Code%20Pro&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Auto" alt="smile-jefferson" width="640" height="320" />
+    <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=24&duration=2000&pause=2000&center=true&vCenter=true&width=450&height=60&lines=HI+there!+I'm+Jefferson!;I'm+a+full-stack+enginer;Hope+you+guys+like+my+page" alt="Typing SVG" /></a>
 </p>
 
 <!-- Index 索引 
@@ -30,10 +30,10 @@
 ## Project👋 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" alt="Laptop" width="25" height="25" />
 
 <!-- 專案開始日期 -->
-<img alt="Static Badge" src="https://img.shields.io/badge/Start_Date-2024_%2F_09_%2F_04-blue?style=plastic&logo=React&logoColor=%2361dbfb&label=Start%20Date&color=blue">
+<img alt="Static Badge" src="https://img.shields.io/badge/Start_Date-2024_%2F_09_%2F_04-blue?style=plastic&logo=Python&logoColor=%2361dbfb&label=Start%20Date&color=blue">
 
 <!-- 專案使用技術 Badge 版本A。 來源:https://shields.io/-->
-![React](https://img.shields.io/badge/Python-%2320232a.svg?style=plastic&logo=Python&logoColor=%2361DAFB)
+![Python](https://img.shields.io/badge/Python-%2320232a.svg?style=plastic&logo=Python&logoColor=%23FFD43B)
 
 ---
 
