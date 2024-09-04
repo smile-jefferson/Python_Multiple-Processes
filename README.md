@@ -35,6 +35,182 @@
 <!-- 專案使用技術 Badge 版本A。 來源:https://shields.io/-->
 ![Python](https://img.shields.io/badge/Python-%23306998.svg?style=plastic&logo=Python&logoColor=%23FFD43B)
 
+Python的多進程同步方式 :
+* multiple processing
+在使用 Python 的 `multiprocessing` 模塊進行多進程編程時，有幾種常見的同步方式來保證多進程之間的協調和數據一致性。以下是一些主要的同步方式：
+
+### 1. `Lock`
+
+`Lock` 是最基本的同步原語，它用於確保只有一個進程可以在任何時候執行特定的代碼區塊。
+
+```python
+import multiprocessing
+
+lock = multiprocessing.Lock()
+
+def critical_section():
+    with lock:
+        # 這裡的代碼在同一時刻只能由一個進程執行
+        pass
+```
+
+### 2. `RLock` (可重入鎖)
+
+`RLock` 是一種可以被同一進程多次獲得的鎖。它適用於在一個進程中重複需要獲得鎖的情況。
+
+```python
+import multiprocessing
+
+rlock = multiprocessing.RLock()
+
+def critical_section():
+    with rlock:
+        # 這裡的代碼在同一時刻只能由一個進程執行
+        pass
+```
+
+### 3. `Semaphore`
+
+`Semaphore` 用於限制同時進程的數量。它可以設置一個初始計數值，表示允許多少個進程同時執行某段代碼。
+
+```python
+import multiprocessing
+
+sem = multiprocessing.Semaphore(2)  # 允許最多兩個進程同時執行
+
+def critical_section():
+    with sem:
+        # 這裡的代碼最多由兩個進程同時執行
+        pass
+```
+
+### 4. `Event`
+
+`Event` 用於進程之間的信號傳遞。當一個進程設置事件時，其他等待這個事件的進程會被通知。
+
+```python
+import multiprocessing
+import time
+
+event = multiprocessing.Event()
+
+def worker():
+    event.wait()  # 等待事件被設置
+    print("Event received!")
+
+def trigger_event():
+    time.sleep(2)
+    event.set()  # 設置事件，通知所有等待的進程
+
+if __name__ == '__main__':
+    p1 = multiprocessing.Process(target=worker)
+    p2 = multiprocessing.Process(target=trigger_event)
+    
+    p1.start()
+    p2.start()
+    
+    p1.join()
+    p2.join()
+```
+
+### 5. `Condition`
+
+`Condition` 用於進程之間的複雜同步和通信。它允許進程在某些條件滿足時進行協作。
+
+```python
+import multiprocessing
+
+condition = multiprocessing.Condition()
+
+def worker():
+    with condition:
+        # 等待條件變為真
+        condition.wait()
+        print("Condition met!")
+
+def signal_condition():
+    with condition:
+        # 設置條件並通知所有等待的進程
+        condition.notify_all()
+
+if __name__ == '__main__':
+    p1 = multiprocessing.Process(target=worker)
+    p2 = multiprocessing.Process(target=signal_condition)
+    
+    p1.start()
+    p2.start()
+    
+    p1.join()
+    p2.join()
+```
+
+### 6. `Manager`
+
+`Manager` 可以用來創建進程間共享的數據結構，如列表、字典等。這些共享的數據結構可以在多個進程間進行讀寫操作。
+
+```python
+import multiprocessing
+
+def worker(d, key, value):
+    d[key] = value
+
+if __name__ == '__main__':
+    with multiprocessing.Manager() as manager:
+        shared_dict = manager.dict()
+        
+        p1 = multiprocessing.Process(target=worker, args=(shared_dict, 'a', 1))
+        p2 = multiprocessing.Process(target=worker, args=(shared_dict, 'b', 2))
+        
+        p1.start()
+        p2.start()
+        
+        p1.join()
+        p2.join()
+        
+        print(shared_dict)  # 輸出: {'a': 1, 'b': 2}
+```
+
+### 7. `Value` 和 `Array`
+
+`Value` 和 `Array` 用於創建共享的數據對象，這些對象可以被多個進程讀寫。這些數據對象通常需要使用鎖來確保數據的一致性。
+
+```python
+import multiprocessing
+import time
+
+def increment(counter, lock):
+    for _ in range(100):
+        with lock:
+            counter.value += 1
+        time.sleep(0.01)
+
+if __name__ == '__main__':
+    counter = multiprocessing.Value('i', 0)
+    lock = multiprocessing.Lock()
+    
+    p1 = multiprocessing.Process(target=increment, args=(counter, lock))
+    p2 = multiprocessing.Process(target=increment, args=(counter, lock))
+    
+    p1.start()
+    p2.start()
+    
+    p1.join()
+    p2.join()
+    
+    print(f"Final counter value: {counter.value}")
+```
+
+### 總結
+
+- **`Lock` 和 `RLock`** 用於基本的互斥和鎖定。
+- **`Semaphore`** 用於控制進程的並發數量。
+- **`Event` 和 `Condition`** 用於進程之間的通知和條件同步。
+- **`Manager`** 提供了進程間共享的數據結構。
+- **`Value` 和 `Array`** 用於進程間共享基本數據。
+
+根據你的需求選擇適合的同步方式，可以有效地管理多進程之間的協作與數據一致性。
+
+
 
 - [back to top](#table-of-contents)
 ---
