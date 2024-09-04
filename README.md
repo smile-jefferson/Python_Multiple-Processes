@@ -20,8 +20,8 @@
 
 - [Project](#project)
 - [Side Project](#side-project)
-- [Github Status](#github-status)
-- [Github Trophy](#github-trophy)
+- [Github Status](#my-status--language)
+- [Github Trophy](#my-trophy)
 - [Github Streak](#my-streak)
 
 
@@ -35,6 +35,8 @@
 <!-- 專案使用技術 Badge 版本A。 來源:https://shields.io/-->
 ![Python](https://img.shields.io/badge/Python-%23306998.svg?style=plastic&logo=Python&logoColor=%23FFD43B)
 
+
+- [back to top](#table-of-contents)
 ---
 
 <!-- 延伸專案
